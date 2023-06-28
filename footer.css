@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Cabin&display=swap");
+
+/*********Contacto*************/
+
+.contacto {
+    height: 100vh;
+    min-height: 100vh;
+    /*Letra para toda la sección*/
+    font-family: "Bebas Neue";
+    width: 1500px;
+    max-width: 100%;
+    margin: auto;
+    color: #E6B54A;
+    /*Para que los patrones y la columna central queden en la misma línea*/
+    display: flex;
+    justify-content: space-between;
+    /*Para que los patrones de los costados se escondan*/
+    overflow: hidden;
+}
+
+
+/*Contacto y Ubicación, datos de la columna central*/
+
+.contacto .columna-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 5px;
+    height: 98%;
+    width: 70%;
+}
+
+
+/*Parte de arriba de la columna, imagen de araña más títulos*/
+
+#columnaarriba {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 30vh;
+    margin: 0 auto 2% auto;
+}
+
+
+/*Caja de imagen de araña*/
+
+.imagen-contacto {
+    text-align: center;
+}
+
+
+/*Imagen araña*/
+
+#simboloarana {
+    height: 25vh;
+}
+
+
+/*Caja que contiene los títulos*/
+
+.titulos-contacto {
+    text-align: center;
+}
+
+
+/*Fuente de títulos*/
+
+.titulos-contacto h1 {
+    font-size: 6vh;
+    line-height: 2vh;
+}
+
+
+/*Este componente es de datos cliente y mapa*/
+
+.datoscliente-ubicacion {
+    display: flex;
+    flex-direction: row;
+    width: 140vh;
+    max-width: 100%;
+    margin: 2% auto;
+}
+
+
+/*Datos cliente*/
+
+#datoscliente {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+
+/*Fuente h1 dentro de datos cliente*/
+
+.contacto .columna-contacto .datoscliente-ubicacion #datoscliente h1 {
+    font-size: 4vh;
+    line-height: 5vh;
+}
+
+
+/*Fuente h3 dentro de datos cliente*/
+
+.contacto .columna-contacto .datoscliente-ubicacion #datoscliente h3 {
+    font-size: 2.5vh;
+    line-height: 2vh;
+    color: rgba(73, 70, 68, 1);
+}
+
+
+/*Fuente de enlaces tipo "a" dentro de datos cliente*/
+
+.contacto .columna-contacto .datoscliente-ubicacion #datoscliente a {
+    font-size: 2.5vh;
+    color: rgba(73, 70, 68, 1);
+    text-decoration: none;
+}
+
+
+/*Fuente de Hover de enlaces tipo "a" dentro de datos cliente*/
+
+.contacto .columna-contacto .datoscliente-ubicacion #datoscliente a:hover {
+    color: #52A5A0;
+    text-decoration: none;
+}
+
+
+/*Mapa*/
+
+#mapa {
+    padding: 3%;
+    padding: 7px;
+    width: 500px;
+    justify-self: right;
+}
+
+
+/*Imágenes de decoración*/
+
+#decoracion1 {
+    width: 200px;
+    opacity: 0.2;
+    /* Patrón izquierdo position:fixed*/
+    /*
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    */
+}
+
+#decoracion2 {
+    width: 200px;
+    opacity: 0.2;
+    /* Patrón derechi position:fixed*/
+    /*
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    right: 0;
+    */
+}
+
+
+/**********************Pie Página******************/
+
+.pie-pagina {
+    font-family: "Bebas Neue";
+    width: 98%;
+    height: 40vh;
+    margin: auto;
+    background-color: #9C1B1C;
+}
+
+
+/*Parte de arriba del footer, donde van los atajos*/
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1vh;
+    padding: 1vh;
+}
+
+
+/*Cajas del footer*/
+
+.box-footer {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 2vh;
+}
+
+
+/*---Primera columna de logo y redes sociales---*/
+
+
+/*Caja del Logo*/
+
+.pie-pagina .grupo-1 .box-footer .logo-redsocial figure {
+    margin-bottom: 5vh;
+}
+
+
+/*Logo*/
+
+.pie-pagina .grupo-1 .box-footer figure img {
+    width: 200px;
+}
+
+
+/*Caja donde se ubican los 3 Iconos de redes sociales*/
+
+.pie-pagina .grupo-1 .box-footer .logo-redsocial .redes-sociales {
+    height: 5vh;
+}
+
+
+/*Caja de cada ícono de red social */
+
+.pie-pagina .grupo-1 .box-footer .logo-redsocial .redes-sociales i {
+    margin: 0 1vh;
+    color: #FFFFFF;
+}
+
+
+/*Hover de cada ícono de red social*/
+
+.pie-pagina .grupo-1 .box-footer .logo-redsocial .redes-sociales i:hover {
+    color: #52A5A0;
+}
+
+
+/*Fuente h3 de pie de página*/
+
+.pie-pagina .grupo-1 .box-footer h3 {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+}
+
+
+/*Fuente p de pie de página*/
+
+.pie-pagina .grupo-1 .box-footer p {
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    line-height: 2vh;
+}
+
+
+/*Fuente enlaces a otras páginas de pie de página*/
+
+.pie-pagina .grupo-1 .box-footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*Fuente de los enlaces de pie de página*/
+
+#links a {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5vh;
+    margin: 0 1vh;
+    line-height: 5vh;
+}
+
+
+/*Segunda columna*/
+
+#segundacolumna {
+    flex-direction: column;
+}
+
+
+/*Tercera columna*/
+
+#terceracolumna {
+    flex-direction: column;
+}
+
+#cuartacolumna {
+    flex-direction: column;
+}
+
+#quintacolumna {
+    flex-direction: column;
+}
+
+
+/*Grupo 2 de pie de pagina*/
+
+.pie-pagina .grupo-2 {
+    background-color: #9C1B1C;
+    text-align: center;
+    padding-bottom: 1vh;
+    color: #FFFFFF;
+}
+
+
+/*Fuente de grupo 2 pie de página*/
+
+.pie-pagina .grupo-2 small {
+    font-size: 2vh;
+}
+
+
+/*Hover para cada botón del pie de página*/
+
+#segundacolumna h3:hover {
+    color: #52A5A0;
+}
+
+#terceracolumna h3:hover {
+    color: #52A5A0;
+}
+
+#cuartacolumna h3:hover {
+    color: #52A5A0;
+}
+
+#cuartacolumna p:hover {
+    color: #52A5A0;
+}
+
+
+/*Lo que se muestra cuando se empequeñece el tamaño de la página*/
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 20px 0px;
+    }
+}

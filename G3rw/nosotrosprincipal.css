@@ -1,0 +1,76 @@
+/*hay que arreglar el tamaño de fondo con la imagen, no son responsivas :(*/
+
+.container-nosotros {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: #E6B54A;
+}
+
+.img-nosotros {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.parrafo-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    color: #FFFFFF;
+}
+
+.parrafo-nosotros h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    text-align: center;
+    margin: 0;
+}
+
+.parrafo-nosotros h2 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.parrafo-nosotros p {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 180;
+    font-size: 19px;
+    text-align: center;
+}
+
+.saber-mas {
+    position: relative;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 180;
+    font-size: 22px;
+    text-align: right;
+}
+
+.saber-mas::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    left: 280px;
+    transition: width 0.3s ease;
+}
+
+.saber-mas:hover::after {
+    width: 25%;
+}

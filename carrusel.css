@@ -1,0 +1,55 @@
+
+.contenedor{
+    max-width: 1200px;
+    position: relative;
+}
+.carrusel{
+    text-align: center;
+    color: orange;
+    padding: 40px;
+}
+.contenedor i{
+    top: 50%;
+    height: 46px;
+    width: 46px; 
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background-color: #aaa;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.contenedor i:first-child{
+    left: -23px;
+}
+.contenedor i:last-child{
+    right: -23px;
+}
+.contenedor .slider{
+    font-size: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slider img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.slider img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px){
+    .slider img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px){
+    .slider img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+/*se agrego la misma estructura del repo de dani<3*/
+.titulo{
+    margin: 20px auto;
+    width: 90%;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: bold;
+    color: #52A5A0;
+    font-size: 40px;
+    
+    
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    height: 2px;
+    background-color:#52A5A0;
+    transition: all .3s linear;
+}
+
+hr:hover{
+    transform: scale(1.1);
+    /* transform-origin: left top; */
+}
+
+.container-artesanias{
+    
+    margin: auto;
+    width: 90%;
+    background-image: url("../svg/fondo.svg");
+    background-repeat: repeat-y;
+    background-position: 100%;
+}
+
+.titulo-souvenirs{
+    margin: 20px 0;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: bold;
+    color: #52A5A0;
+}
+
+.container-cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 20px;
+    
+}
+
+.card{
+    display: flex;
+    width: 500px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    height: 300px;
+    width: 300px;
+    margin: 15px 0;
+}
+
+.titulo-columna{
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: bold;
+    color: #52A5A0;
+
+}
+.card-text{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+}

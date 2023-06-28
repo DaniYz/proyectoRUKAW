@@ -1,0 +1,28 @@
+
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:linear-gradient(
+        to right,
+        rgb(0 0 0 / 0.5),
+        rgb(0 0 0 / 0)
+    ), url(../img/BannerRukaWeshakellu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.titulo-banner-principal{
+    user-select: none;
+    color: #fff;
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
